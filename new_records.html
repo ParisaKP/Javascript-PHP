@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title> Inlämning 3 /Uppgift 2C </title>
+    <script>
+    <!--
+        function checkFields()
+        {
+            var year = /\d{4}/;
+            var pris = /\d+$/;
+            var yearValue = document.frm.year.value;
+            if (year.test(yearValue) != 1 || parseInt(yearValue) > 2015 || parseInt(yearValue) < 1900) 
+            {    
+                alert('Fel inmatning Utgivningsår') 
+                return false;
+            }
+            if (pris.test(document.frm.pris.value) != 1)
+            {    
+                alert('Fel inmatning Pris') 
+                return false;
+            }
+        }
+    -->
+    </script>
+    <noscript>
+        Din webläsare kan inte hantera script
+    </noscript>
+</head>
+<body>
+    <h2><font color="#cc00ff"> Registrera nya skivor </font></h2>
+    <form name="frm" method="POST" action="insert_records.php" onSubmit="return checkFields();">
+        <table>
+            <tr>
+                <td>Titel:</td>
+                <td><input type="text" name="titel"></td>
+            </tr>
+            <tr>
+                <td>Artist:</td>
+                <td><input type="text" name="artist"></td>
+            </tr>
+            <tr>
+                <td>Utgivningsår:</td>
+                <td><input type="text" name="year"></td>
+            </tr>
+            <tr>
+                <td>Pris:</td>
+                <td><input type="text" name="pris"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit" value="registrera"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
