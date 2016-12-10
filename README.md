@@ -1,4 +1,5 @@
 # Javascript-PHP
-En uppgift på kursen scriptspråk i webmiljö där man får skapa en databas av skivor. Man kan lägga in nya skivor och man kan få en lista med alla befintliga skivor.
+A task in "Skriptspråk i webmiljö", a course in Gävle University College.
+A database of music records. Any one can add new records and also get a list of all the records existing in the database.
 
-OBS: Databasen funkar inte utan en webserver. För att göra uppgiften WampServer var installerad på datorn.
+In order for this to work the files should be located on the web server, since PHP files first need to be processed in a web server before sending their output to the web browser.
